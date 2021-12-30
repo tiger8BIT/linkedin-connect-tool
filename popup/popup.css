@@ -1,0 +1,39 @@
+:root {
+    --main-color: #0a66c2;
+    --second-color: darkgrey;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 40px;
+    background-color: transparent;
+    width: 100%;
+    padding: 5px 0;
+    font-size: large;
+    border-color: var(--second-color);
+    color: var(--second-color);
+}
+button:hover {
+    cursor: pointer;
+}
+button.primary {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+label {
+    font-size: medium;
+}
+input {
+    margin: 5px 0;
+    font-size: large;
+    padding: 5px;
+}
+#status {
+    margin-top: 10px;
+    font-size: medium;
+    padding: 5px;
+}
+#error {
+    border: 1px solid red;
+    color: red;
+}
