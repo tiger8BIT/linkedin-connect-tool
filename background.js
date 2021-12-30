@@ -15,6 +15,8 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 chrome.tabs.onRemoved.addListener(function(tabId, info) {
     if (tabId === networkTab.id) {
         chrome.storage.sync.set({ isConnecting: false });
+        chrome.storage.sync.set({ error: null });
+        chrome.storage.sync.set({ status: startStatus });
     }
 });
 
