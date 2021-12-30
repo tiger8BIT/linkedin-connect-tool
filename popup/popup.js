@@ -14,7 +14,7 @@ chrome.storage.sync.get("isConnecting", ({ isConnecting }) => {
 
 chrome.storage.sync.get("error", ({ error }) => {
     if (error !== null) {
-       showError(error.text)
+       showError(error)
     }
 });
 

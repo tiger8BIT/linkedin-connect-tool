@@ -33,7 +33,7 @@ input {
     font-size: medium;
     padding: 5px;
 }
-#error {
+#status.error {
     border: 1px solid red;
     color: red;
 }
