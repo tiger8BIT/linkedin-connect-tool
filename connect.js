@@ -93,10 +93,10 @@ async function slowClickIdIsConnecting(button) {
     })
 }
 
-function runIfIsConnecting(functionForRun) {
+function runIfIsConnecting(asyncFunctionForRun) {
     chrome.storage.sync.get("isConnecting", async ({isConnecting}) => {
         if (isConnecting) {
-            functionForRun();
+            await asyncFunctionForRun();
         }
     });
 }
